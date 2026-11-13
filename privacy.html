@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>プライバシーポリシー | Parcae NAR Work Transfer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a class="brand" href="index.html">Parcae NAR Work Transfer</a><nav aria-label="ページ"><a href="index.html">ツールについて</a></nav></header>
+  <main>
+    <h1>プライバシーポリシー</h1>
+    <p class="lead">Parcae NAR Work Transferが扱う情報、その目的、保存と削除について説明します。</p>
+    <section><h2>運用者と目的</h2><p>運用者はMumeiga-Tobariです。運用者本人の競馬予測モデルの研究・検証で使用する分析資料を、本人管理のVPSから本人所有の非公開Google Driveへ出力し、本人のChatGPT Workで利用するために情報を扱います。一般向けの登録・データ配布サービスは提供しません。</p></section>
+    <section><h2>扱う情報とGoogleの権限</h2><p>オッズのファイルと、取得日時・対象日・行数・SHA-256等の照合記録を扱います。Google Driveからは、専用フォルダと転送ファイルの識別子、名前、サイズ、作成時刻、共有権限、および照合のためのファイル内容を取得します。</p><p>OAuth権限は<code>drive.file</code>を使用します。アプリは指定フォルダと転送ファイルの所有者限定設定を確認します。この権限自体が、アクセスを1つのフォルダだけに限定するという意味ではありません。</p><p>認可された操作のためにアクセストークンと更新トークンを使用します。Googleアカウントのパスワードをこのツールが収集することはありません。</p></section>
+    <section><h2>利用・提供の範囲</h2><p>情報は、本人が指定した分析用ファイルの出力、内容照合、分析、および動作状況の確認に使用します。販売、広告、第三者向けのデータ配布には使用しません。</p><p>保存と認可にGoogleのサービスを利用します。運用者が連携したChatGPT Workから資料を使用する場合、内容はOpenAIのサービス上で処理されます。本転送プログラム自体にはOpenAI APIへの送信やモデル学習の機能はありません。Work側の保存やモデル改善への利用は、運用者の契約とデータ設定に従います。</p><p>Google APIから受け取った情報の利用は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>と、適用されるLimited Use要件に従います。取得元のデータの権利を、このツールが新たに付与するものではありません。</p></section>
+    <section><h2>保存と保護</h2><p>各便のZIPと照合記録を保存します。現在の転送処理に、保存期間による自動削除機能はありません。分析の原本は運用者の管理するVPS・PC等でも保持します。認証情報・アプリ設定・モデル・復元用データは転送対象に含めません。</p><p>通信には暗号化された接続を使用し、認証情報はアクセスを制限した設定として保管します。Driveの転送先と転送ファイルは、所有者限定であることを検査します。</p></section>
+    <section><h2>認可解除と削除</h2><p>運用者はGoogleアカウントの接続管理からアプリの認可を解除できます。認可解除だけでは、すでに保存されたファイルや記録は削除されません。</p><p>Driveのファイルは運用者がDriveから削除できます。VPS・PC・Workのコピーや記録については、それぞれの保存先で削除・保持を管理します。削除やデータの扱いについての問い合わせは、下記の連絡先で受け付けます。</p></section>
+    <section><h2>この説明サイト</h2><p>このサイトには、ログイン機能、入力フォーム、広告、独自のアクセス解析、独自Cookieはありません。ホスティングに使用するGitHub Pagesは、セキュリティ目的でIPアドレス等を記録します。取り扱いは<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する声明</a>に従います。</p></section>
+    <section><h2>連絡先と変更</h2><p>運用者：<a href="https://github.com/Mumeiga-Tobari">Mumeiga-Tobari</a>。問い合わせは<a href="https://github.com/Mumeiga-Tobari/Mumeiga-Tobari.github.io/issues">リポジトリのIssues</a>へお願いします。認証情報や非公開ファイルは公開の問い合わせ欄に添付しないでください。非公開の連絡が必要な場合は、Google認可画面に表示されるサポート連絡先を使用してください。</p><p>情報の扱いを変更する場合は、このポリシーを更新し、必要な同意を得てから変更します。</p><p>最終更新：2026年11月14日</p></section>
+  </main>
+  <footer><a href="index.html">ツールの紹介へ戻る</a></footer>
+</body>
+</html>
